@@ -11,3 +11,108 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.b {
+  display: flex;
+
+flex-wrap: wrap;
+}
+
+.header_container {
+  display: flex;
+
+  background-color: black;
+}
+
+.logoImg {
+  width: 190px;
+}
+.carello-button{
+margin-left: auto;
+margin-top: 50px;
+}
+.carelloImg {
+  width: 90px;
+}
+.par{
+  color: #F2EBB0;
+font-size: 40px;
+  margin: auto;
+  opacity: 0;
+}
+.foto {
+  max-width: 300px;
+  max-height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+.main_container {
+display: flex;
+
+
+}
+
+.aside{
+  width: 20%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: left;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
+.oggetti_container {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+
+
+
+}
+.oggetto_block {
+display: flex;
+flex-direction: column;
+width: 300px;
+margin: 20px;
+padding: 10px;
+}
+.name{
+  text-align: center;
+}
+.price{
+  text-align: center;
+}
+.categoryButtonSelected {
+  background-color: rgb(180, 191, 180);
+
+}
+.quantity {
+  align-self: center;
+}
+
+.categoryButton:hover {
+
+  background-color: #86867e;;
+
+}
+
+.categoryButton {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+
+.icon {
+  width: 20px;
+}
+
+
+
+.cart_button {
+  background-color: #cdcdba;
+  margin-top: 20px;
+  margin-left: 10px;
+width: 40%;
+align-self: center;
+}
