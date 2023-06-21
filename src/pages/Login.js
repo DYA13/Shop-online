@@ -1,10 +1,37 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
+const rootUrl = 'https://node-course-e-commerce-8r2s.onrender.com'
 
-const Login = ({ handleLogin }) => {
+const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const navigate = useNavigate()
+  const [redirectToHome, setRedirectToHome] = useState(false)
+  const [userName, setUserName] = useState('')
+
+  const handleLogin = async (user) => {
+    try {
+      const url = `${rootUrl}/api/v1/auth/login`
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(user)
+      })
+
+      if (response.ok) {
+        console.log('Login successful')
+        setUserName(user.name)
+        return true
+      } else {
+        console.log('Login failed')
+        return false
+      }
+    } catch (error) {
+      console.log(error)
+      return false
+    }
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -14,12 +41,17 @@ const Login = ({ handleLogin }) => {
     if (success) {
       setEmail('')
       setPassword('')
-      navigate('/')
+      setRedirectToHome(true)
     }
+  }
+
+  if (redirectToHome) {
+    return <Redirect to='/' />
   }
 
   return (
     <div>
+      {userName && <p>Welcome {userName}!</p>}
       <h1>Login Form</h1>
       <form onSubmit={handleSubmit}>
         <div>

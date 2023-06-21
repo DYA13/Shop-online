@@ -1,5 +1,10 @@
+import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { useEffect, useRef } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
+import Login from '../pages/Login'
+import Register from '../pages/Register'
+import Logout from '../pages/Logout'
 
 const Header = () => {
   let text = useRef(null)
@@ -7,12 +12,12 @@ const Header = () => {
   useEffect(() => {
     gsap.to(text, {
       duration: 8,
-
       delay: 3,
       opacity: 1,
       repeat: -1
     })
-  })
+  }, [])
+
   return (
     <div className='header_container'>
       <img className='logoImg' src='Logo.png' alt='logo' />
@@ -23,18 +28,27 @@ const Header = () => {
         }}
         className='par'
       >
-        {' '}
         Benvenuto su Jewelry Shop Olivia Rossi!
       </p>
+      <Router>
+        <Route exact path='/login'>
+          <Login />
+        </Route>
+
+        <Route exact path='/register'>
+          <Register />
+        </Route>
+
+        <Route exact path='/logout'>
+          <Logout />
+        </Route>
+      </Router>
+
       <a href='##' className='carello-button'>
-        {' '}
-        <img className='carelloImg' src='login.png' alt='logo' />
-      </a>
-      <a href='##' className='carello-button'>
-        {' '}
-        <img className='carelloImg' src='Carello.png' alt='logo' />{' '}
+        <img className='carelloImg' src='Carello.png' alt='logo' />
       </a>
     </div>
   )
 }
+
 export default Header
