@@ -32,17 +32,11 @@ const Header = () => {
       </p>
       <Router>
         <Routes>
-          <Route exact path='/login'>
-            <Login />
-          </Route>
+          <Route exact path='/login' element={<Login />} />
 
-          <Route exact path='/register'>
-            <Register />
-          </Route>
+          <Route exact path='/register' element={<Register />} />
 
-          <Route exact path='/logout'>
-            <Logout />
-          </Route>
+          <Route exact path='/logout' element={<Logout />} />
         </Routes>
       </Router>
 
