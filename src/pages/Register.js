@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Redirect } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 
 const rootUrl = 'https://node-course-e-commerce-8r2s.onrender.com'
 
@@ -48,7 +48,7 @@ const Register = () => {
   }
 
   if (redirectToHome) {
-    return <Redirect to='/' />
+    return <Navigate to='/' />
   }
 
   return (
