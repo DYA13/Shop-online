@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
@@ -8,6 +8,7 @@ import Logout from '../pages/Logout'
 
 const Header = () => {
   let text = useRef(null)
+  const [userName, setUserName] = useState(undefined)
 
   useEffect(() => {
     gsap.to(text, {
@@ -17,6 +18,10 @@ const Header = () => {
       repeat: -1
     })
   }, [])
+
+  function setUserNameAfterLogin(user) {
+    setUserName(user.name)
+  }
 
   return (
     <div className='header_container'>
@@ -32,11 +37,16 @@ const Header = () => {
       </p>
       <Router>
         <Routes>
-          <Route exact path='/login' element={<Login />} />
-
+          <Route
+            exact
+            path='/login'
+            element={<Login afterLogin={setUserNameAfterLogin} />}
+          />
           <Route exact path='/register' element={<Register />} />
-
           <Route exact path='/logout' element={<Logout />} />
+          <Route path='*'>
+            {userName && <p className='accountPar'>Welcome {userName}!</p>}
+          </Route>
         </Routes>
       </Router>
 

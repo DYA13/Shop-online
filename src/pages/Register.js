@@ -55,7 +55,7 @@ const Register = () => {
       <h1>Registration Form</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Name</label>
+          <label className='label'>Name</label>
           <input
             type='name'
             value={name}
@@ -63,7 +63,7 @@ const Register = () => {
           />
         </div>
         <div>
-          <label>Email</label>
+          <label className='label'>Email</label>
           <input
             type='email'
             value={email}
@@ -71,7 +71,7 @@ const Register = () => {
           />
         </div>
         <div>
-          <label>Password</label>
+          <label className='label'>Password</label>
           <input
             type='password'
             value={password}
@@ -80,7 +80,7 @@ const Register = () => {
         </div>
         <button type='submit'>Register</button>
       </form>
-      <p>
+      <p className='accountPar'>
         Already have an account? <Link to='/login'>Login</Link>
       </p>
     </div>

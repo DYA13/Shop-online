@@ -15,7 +15,7 @@ code {
 .b {
   display: flex;
 
-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .header_container {
@@ -27,16 +27,16 @@ flex-wrap: wrap;
 .logoImg {
   width: 190px;
 }
-.carello-button{
-margin-left: auto;
-margin-top: 50px;
+.carello-button {
+  margin-left: auto;
+  margin-top: 50px;
 }
 .carelloImg {
   width: 90px;
 }
-.par{
-  color: #F2EBB0;
-font-size: 40px;
+.par {
+  color: #f2ebb0;
+  font-size: 40px;
   margin: auto;
   opacity: 0;
 }
@@ -45,15 +45,12 @@ font-size: 40px;
   max-height: 400px;
   background-position: center center;
   background-repeat: no-repeat;
-
 }
 .main_container {
-display: flex;
-
-
+  display: flex;
 }
 
-.aside{
+.aside {
   width: 20%;
   padding-left: 0.5rem;
   margin-left: 0.5rem;
@@ -63,38 +60,32 @@ display: flex;
   color: #29627e;
 }
 .oggetti_container {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-
-
-
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .oggetto_block {
-display: flex;
-flex-direction: column;
-width: 300px;
-margin: 20px;
-padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
 }
-.name{
+.name {
   text-align: center;
 }
-.price{
+.price {
   text-align: center;
 }
 .categoryButtonSelected {
   background-color: rgb(180, 191, 180);
-
 }
 .quantity {
   align-self: center;
 }
 
 .categoryButton:hover {
-
-  background-color: #86867e;;
-
+  background-color: #86867e;
 }
 
 .categoryButton {
@@ -107,12 +98,18 @@ padding: 10px;
   width: 20px;
 }
 
-
-
 .cart_button {
   background-color: #cdcdba;
   margin-top: 20px;
   margin-left: 10px;
-width: 40%;
-align-self: center;
+  width: 40%;
+  align-self: center;
+}
+.label {
+  font: 15px;
+  color: goldenrod;
+}
+.accountPar {
+  font-size: 18px;
+  color: goldenrod;
 }
