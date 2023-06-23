@@ -112,7 +112,7 @@ const dataContent = [
 
     price: 2510.0,
 
-    img: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmluZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1hNq68crFcVtdp43OhAEsNSU3vLYKUFgs&export=download',
 
     name: 'Orecchini Tennis In Oro Bianco 18k A Tre File Con Diamanti.',
 
@@ -124,7 +124,7 @@ const dataContent = [
 
     price: 3598.0,
 
-    img: 'https://images.unsplash.com/photo-1591209627710-d2427565a41f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJpbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1I2nDN5Mh69ExMyOvwb_3W5HeQ61fXFce&export=download',
 
     name: 'Orecchini Tennis In Oro Bianco 18k A Tre File Con Diamanti.',
 
@@ -136,7 +136,7 @@ const dataContent = [
 
     price: 2397.0,
 
-    img: 'https://images.unsplash.com/photo-1588891825655-aa526b56f805?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGVhcnJpbmdzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1f5I5Y_no6SO73Lxc-YjCaHmHQc1q18sQ&export=download',
 
     name: 'Orecchini Tennis In Oro Bianco 18k A Tre File Con Diamanti.',
 
@@ -148,7 +148,7 @@ const dataContent = [
 
     price: 4307.0,
 
-    img: 'https://images.unsplash.com/photo-1610661022658-5068c4d8f286?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGFuZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1nkGVXWdshMrSlaCLnRK30awiRQRFUwK5&export=download',
 
     name: 'Collana In Oro Bianco 18k E Pendente Con Zaffiro Blu A Cuore E Diamanti A Contorno.',
 
@@ -160,7 +160,7 @@ const dataContent = [
 
     price: 2187.0,
 
-    img: 'https://images.unsplash.com/photo-1547738238-5ddb16bef15f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGNvbGxhbmV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1nNkuMtH5BEgjVN8OrJ-5vWf5C-ESEkrI&export=download',
 
     name: 'Collana Punto Luce In Oro Bianco 18k A Griffe Con Diamante. Ct. 0,05.',
 
@@ -172,7 +172,7 @@ const dataContent = [
 
     price: 3995.0,
 
-    img: 'https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29sbGFuYXxlbnwwfDB8MHx8&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1qFHGJdT5WbGzjGyNY6kCnqQNep40EkBP&export=download',
 
     name: 'Collana In Oro Bianco 18k E Pendente Con Grande Zaffiro Blu Ovale E Diamanti',
 
@@ -184,7 +184,7 @@ const dataContent = [
 
     price: 2397.0,
 
-    img: 'https://images.unsplash.com/photo-1636697005346-23d9c0fd53fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGNvbGxhbmV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1dyH4gkTqWXUl8ZyyUehRtn_p1C6ZCWko&export=download',
 
     name: 'Collana Diamantata In Oro Giallo 18k, Cm 50.',
 
@@ -196,7 +196,7 @@ const dataContent = [
 
     price: 3591.0,
 
-    img: 'https://images.unsplash.com/photo-1602527418517-f33773c47f8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29sbGFuZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=13XegzFbj3T61axWAetHllTtWS9eHAOuv&export=download',
 
     name: 'Collana In Oro Giallo 18k A Maglia Piatta E Lucida, Effetto Nastrino, Cm 39.',
 
@@ -208,7 +208,7 @@ const dataContent = [
 
     price: 1497.0,
 
-    img: 'https://images.unsplash.com/photo-1602527418074-4b10b0e300ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGNvbGxhbmV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1X1az8td2rZRDf2rIQ-99A-ccrxrpVRJS&export=download',
 
     name: 'Collana Punto Luce In Oro Bianco 18k Con Diamante Ct 0,90.',
 
@@ -220,7 +220,7 @@ const dataContent = [
 
     price: 4338.0,
 
-    img: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YnJhY2VsZXR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1HXwSu7gUjLyqEuYcE6jxtVmm-aSUMhS_&export=download',
 
     name: 'Bracciale In Oro Giallo 18k Con Maglie Lavorate E Diamanti.',
 
@@ -232,7 +232,7 @@ const dataContent = [
 
     price: 3747.0,
 
-    img: 'https://images.unsplash.com/photo-1591210244853-ea68b6126edf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YnJhY2VsZXR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1gCNwDZbUREuAP0uVcNSpb_b6z-2wAI5o&export=download',
 
     name: 'Bracciale In Oro Bianco E Rosso 18k Con Elementi Di Forma Rotonda Alternati Con Diamanti.',
 
@@ -244,7 +244,7 @@ const dataContent = [
 
     price: 2015.0,
 
-    img: 'https://images.unsplash.com/photo-1655707063475-1381a4c0a63a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjQ1fHxicmFjZWxldHxlbnwwfDB8MHx8&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1Ye1-J-wflvm7WJkmYcEdFO2_fpVS2unp&export=download&',
 
     name: 'Bracciale Fantasia In Oro Giallo Diamantato 18k, Cm 18.',
 
@@ -256,7 +256,7 @@ const dataContent = [
 
     price: 3015.0,
 
-    img: 'https://images.unsplash.com/photo-1655707063513-a08dad26440e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjQ3fHxicmFjZWxldHxlbnwwfDB8MHx8&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1j6DqlkkSC3cLmfqEg0A1DWeiq729kjb3&export=download',
 
     name: 'Bracciale Rigido In Oro Rosa 18k Con Pavè Di Diamanti.',
 
@@ -268,7 +268,7 @@ const dataContent = [
 
     price: 3634.0,
 
-    img: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YnJhY2NpYWxlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1vzlIr4rfZLHCfSdNF0jBLgCK4vGy16zw&export=download',
 
     name: 'Bracciale Da Donna Fantasia In Oro Bianco E Giallo 18k.',
 
@@ -280,7 +280,7 @@ const dataContent = [
 
     price: 3563.0,
 
-    img: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YnJhY2NpYWxlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+    img: 'https://drive.google.com/uc?id=1L7c5psrpHDgpkAOfAcbgiPby60k1vIq5&export=download&',
 
     name: 'Bracciale In Oro Giallo 18k Con Charms E Perline Colorate.',
 
