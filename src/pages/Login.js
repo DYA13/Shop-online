@@ -11,11 +11,11 @@ const Login = ({ afterLogin }) => {
     e.preventDefault()
     if (!email || !password) return
     const user = { email, password }
-    const success = await handleLogin(user) // Update handleLogin in api.js to return the user in an object;  instead of just returning true
-    if (success) {
+    const {successful: responseSucceeded, user: loggedInUser } = await handleLogin(user) // Update handleLogin in api.js to return the user in an object;  instead of just returning true
+    if (responseSucceeded) {
       setEmail('')
       setPassword('')
-      afterLogin(success.user)
+      afterLogin(loggedInUser)
       setRedirectToHome(true)
     }
   }

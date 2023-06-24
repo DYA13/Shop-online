@@ -37,14 +37,15 @@ export const handleLogin = async (user) => {
 
     if (response.ok) {
       console.log('Login successful')
-      return true
+      const body = await response.json()
+      return { successful: true, user: body.user }
     } else {
       console.log('Login failed')
-      return false
+      return { successul: false }
     }
   } catch (error) {
     console.log(error)
-    return false
+    return { successful: false }
   }
 }
 
