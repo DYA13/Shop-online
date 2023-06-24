@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { removeItemFromCart } from '../../redux/cartSlice'
-import dataContent from '../../data/dataContent'
+import dataContent from '../../data/DataContent'
 
 const CartItem = ({ cartItem }) => {
   const oggetti = dataContent.find((item) => item.id === cartItem.oggettoId)

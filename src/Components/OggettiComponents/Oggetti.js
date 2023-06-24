@@ -1,7 +1,7 @@
 import Oggetto from './Oggetto'
 import { useSelector } from 'react-redux'
 import { getSelectedCategory } from '../../redux/oggettiSlice'
-import dataContent from '../../data/dataContent'
+import dataContent from '../../data/DataContent'
 
 const Oggetti = () => {
   const selectedCategory = useSelector(getSelectedCategory)

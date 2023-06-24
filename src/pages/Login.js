@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { handleLogin } from '../utils/api'
 
-const Login = ({ afterLogin }) => {
+const LoginForm = ({ afterLogin }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [redirectToHome, setRedirectToHome] = useState(false)
@@ -11,7 +11,8 @@ const Login = ({ afterLogin }) => {
     e.preventDefault()
     if (!email || !password) return
     const user = { email, password }
-    const {successful: responseSucceeded, user: loggedInUser } = await handleLogin(user) // Update handleLogin in api.js to return the user in an object;  instead of just returning true
+    const { successful: responseSucceeded, user: loggedInUser } =
+      await handleLogin(user) // Update handleLogin in api.js to return the user in an object;  instead of just returning true
     if (responseSucceeded) {
       setEmail('')
       setPassword('')
@@ -46,11 +47,11 @@ const Login = ({ afterLogin }) => {
         </div>
         <button type='submit'>Login</button>
       </form>
-      <p className='accountPar'>
+      <p className='account-par'>
         Don't have an account? <Link to='/register'>Register</Link>
       </p>
     </div>
   )
 }
 
-export default Login
+export default LoginForm

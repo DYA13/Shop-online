@@ -18,7 +18,7 @@ code {
   flex-wrap: wrap;
 }
 
-.header_container {
+.headerContainer {
   display: flex;
 
   background-color: black;
@@ -109,7 +109,7 @@ code {
   font: 15px;
   color: goldenrod;
 }
-.accountPar {
+.account-par {
   font-size: 18px;
   color: goldenrod;
 }

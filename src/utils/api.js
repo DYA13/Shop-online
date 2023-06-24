@@ -37,11 +37,15 @@ export const handleLogin = async (user) => {
 
     if (response.ok) {
       console.log('Login successful')
+      // .json() will returns the body of the response as a json object
+      // read more in mdn: https://developer.mozilla.org/en-US/docs/Web/API/Response/json#examples.
+      // We expect the body returned by the backend to look like {"user":{"name":"akos","userId":"649496075cb6d83f666e9f3a","role":"user"}}
       const body = await response.json()
-      return { successful: true, user: body.user }
+      // return just the user object to the caller of `handleLogin` (which is being called in `Login.js` component)
+      return body.user
     } else {
       console.log('Login failed')
-      return { successul: false }
+      return false
     }
   } catch (error) {
     console.log(error)
