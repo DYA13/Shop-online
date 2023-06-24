@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { handleLogin } from '../utils/api'
 
-const LoginForm = ({ afterLogin }) => {
+const Login = ({ afterLogin }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [redirectToHome, setRedirectToHome] = useState(false)
@@ -54,4 +54,4 @@ const LoginForm = ({ afterLogin }) => {
   )
 }
 
-export default LoginForm
+export default Login
