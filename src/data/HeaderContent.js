@@ -20,6 +20,7 @@ const Header = () => {
   }, [])
 
   function setUserNameAfterLogin(user) {
+    console.log("SETTING USER NAME in HeaderContent: ", user)
     setUserName(user.name)
   }
 
@@ -44,8 +45,7 @@ const Header = () => {
           />
           <Route exact path='/register' element={<Register />} />
           <Route exact path='/logout' element={<Logout />} />
-          <Route path='*'>
-            {userName && <p className='accountPar'>Welcome {userName}!</p>}
+          <Route path='*' element={userName ? <p className='accountPar'>Welcome {userName}!</p> : ''}>
           </Route>
         </Routes>
       </Router>
