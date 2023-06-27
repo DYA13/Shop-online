@@ -22,7 +22,6 @@ const Navbar = () => {
   return (
     <Router>
       <nav>
-        <Link to='/'>Home</Link>
         {!isLoggedIn ? (
           <Link to='/login'>Login</Link>
         ) : (
