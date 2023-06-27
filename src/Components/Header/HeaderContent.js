@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-
-import Login from '../pages/Login'
-import Register from '../pages/Register'
-import Logout from '../pages/Logout'
+import Login from '../../pages/Login'
+import Register from '../../pages/Register'
+import Logout from '../../pages/Logout'
 
 const Header = () => {
   let text = useRef(null)
@@ -51,6 +50,7 @@ const Header = () => {
               userName ? <p className='accountPar'>Welcome {userName}!</p> : ''
             }
           ></Route>
+          <Route path='login' element={<Login />} />
         </Routes>
       </Router>
 

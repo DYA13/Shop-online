@@ -2,7 +2,8 @@ import './App.css'
 import Oggetti from './Components/OggettiComponents/Oggetti'
 import AllCategories from './Components/Filter/AllCategories'
 import Cart from './Components/Cart/Cart'
-import Header from './data/HeaderContent'
+import Header from './Components/Header/HeaderContent'
+import Navbar from './Components/Header/Navbar'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <header>
         <nav className='header_content'>
           <Header />
+          <Navbar />
         </nav>
       </header>
 
