@@ -6,17 +6,21 @@ const Login = ({ afterLogin }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [redirectToHome, setRedirectToHome] = useState(false)
+  const [loginSuccess, setLoginSuccess] = useState(false)
+  const [loggedInEmail, setLoggedInEmail] = useState('')
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     if (!email || !password) return
     const user = { email, password }
     const { successful: responseSucceeded, user: loggedInUser } =
-      await handleLogin(user) // Update handleLogin in api.js to return the user in an object;  instead of just returning true
+      await handleLogin(user)
     if (responseSucceeded) {
       setEmail('')
       setPassword('')
       afterLogin(loggedInUser)
+      setLoggedInEmail(email)
+      setLoginSuccess(true)
       setRedirectToHome(true)
     }
   }
@@ -28,6 +32,9 @@ const Login = ({ afterLogin }) => {
   return (
     <div>
       <h1>Login Form</h1>
+      {loginSuccess && (
+        <p className='welcome-message'>Welcome, {loggedInEmail}!</p>
+      )}
       <form onSubmit={handleSubmit}>
         <div>
           <label className='label'>Email</label>

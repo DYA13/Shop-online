@@ -25,7 +25,9 @@ const Navbar = () => {
         {!isLoggedIn ? (
           <Link to='/login'>Login</Link>
         ) : (
-          <button onClick={handleLogoutClick}>Logout</button>
+          <button className='logoutButton' onClick={handleLogoutClick}>
+            Logout
+          </button>
         )}
       </nav>
 

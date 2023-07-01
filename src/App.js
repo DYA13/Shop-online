@@ -3,7 +3,7 @@ import Oggetti from './Components/OggettiComponents/Oggetti'
 import AllCategories from './Components/Filter/AllCategories'
 import Cart from './Components/Cart/Cart'
 import Header from './Components/Header/HeaderContent'
-import Navbar from './Components/Header/Navbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
@@ -11,7 +11,6 @@ function App() {
       <header>
         <nav className='header_content'>
           <Header />
-          <Navbar />
         </nav>
       </header>
 

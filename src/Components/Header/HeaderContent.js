@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+
 import Login from '../../pages/Login'
 import Register from '../../pages/Register'
 import Logout from '../../pages/Logout'
@@ -24,18 +25,23 @@ const Header = () => {
   }
 
   return (
-    <div className='headerContainer'>
-      <img className='logoImg' src='Logo.png' alt='logo' />
+    <Router>
+      <div className='headerContainer'>
+        <img className='logoImg' src='Logo.png' alt='logo' />
 
-      <p
-        ref={(el) => {
-          text = el
-        }}
-        className='par'
-      >
-        Benvenuto su Jewelry Shop Olivia Rossi!
-      </p>
-      <Router>
+        <p
+          ref={(el) => {
+            text = el
+          }}
+          className='par'
+        >
+          Benvenuto su Jewelry Shop Olivia Rossi!
+        </p>
+
+        <Link to='/login' className='link'>
+          Login
+        </Link>
+
         <Routes>
           <Route
             exact
@@ -52,12 +58,8 @@ const Header = () => {
           ></Route>
           <Route path='login' element={<Login />} />
         </Routes>
-      </Router>
-
-      <a href='##' className='carello-button'>
-        <img className='carelloImg' src='Carello.png' alt='logo' />
-      </a>
-    </div>
+      </div>
+    </Router>
   )
 }
 

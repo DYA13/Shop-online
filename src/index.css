@@ -116,3 +116,23 @@ code {
   font-size: 15px;
   color: aqua;
 }
+.logoutPar,
+.logoutButton {
+  font-size: 15px;
+  color: goldenrod;
+}
+.welcome-message {
+  font-size: 15px;
+  color: #d9dc14;
+}
+.notification {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: aliceblue;
+}
+
+.success {
+  background-color: #d9dc14;
+  color: #b1cab2;
+}

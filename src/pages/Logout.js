@@ -28,8 +28,12 @@ const Logout = () => {
 
   return (
     <div>
-      <h4>If you want to log out please press the button</h4>
-      <button onClick={handleLogout}>Logout</button>
+      <h4 className='logoutPar'>
+        If you want to log out please press the button
+      </h4>
+      <button className='logoutButton' onClick={handleLogout}>
+        Logout
+      </button>
     </div>
   )
 }
