@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Login from '../pages/Login'
 import Register from '../pages/Register'
@@ -37,10 +37,6 @@ const Header = () => {
         >
           Benvenuto su Jewelry Shop Olivia Rossi!
         </p>
-
-        <Link to='/login' className='link'>
-          Login
-        </Link>
 
         <Routes>
           <Route

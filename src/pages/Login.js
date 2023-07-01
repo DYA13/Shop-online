@@ -30,8 +30,9 @@ const Login = ({ afterLogin }) => {
   }
 
   return (
-    <div>
-      <h1>Login Form</h1>
+    <div className='login-form'>
+      <h4>Log in</h4>
+
       {loginSuccess && (
         <p className='welcome-message'>Welcome, {loggedInEmail}!</p>
       )}
@@ -39,6 +40,7 @@ const Login = ({ afterLogin }) => {
         <div>
           <label className='label'>Email</label>
           <input
+            className='input-login'
             type='email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -47,15 +49,21 @@ const Login = ({ afterLogin }) => {
         <div>
           <label className='label'>Password</label>
           <input
+            className='input-login'
             type='password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type='submit'>Login</button>
+        <button className='button-login' type='submit'>
+          Login
+        </button>
       </form>
       <p className='account-par'>
-        Don't have an account? <Link to='/register'>Register</Link>
+        Don't have an account?{' '}
+        <Link className='link' to='/register'>
+          Register
+        </Link>
       </p>
     </div>
   )
