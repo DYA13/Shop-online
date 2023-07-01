@@ -2,7 +2,7 @@ import './App.css'
 import Oggetti from './Components/OggettiComponents/Oggetti'
 import AllCategories from './Components/Filter/AllCategories'
 import Cart from './Components/Cart/Cart'
-import Header from './data/HeaderContent'
+import Header from './Components/HeaderContent'
 
 function App() {
   return (
