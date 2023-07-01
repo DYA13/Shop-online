@@ -20,7 +20,7 @@ const Header = () => {
   }, [])
 
   function setUserNameAfterLogin(user) {
-    console.log('SETTING USER NAME in HeaderContent: ', user)
+    console.log('SETTING USER NAME: ', user)
     setUserName(user.name)
   }
 

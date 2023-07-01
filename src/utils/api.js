@@ -42,10 +42,11 @@ export const handleLogin = async (user) => {
       // We expect the body returned by the backend to look like {"user":{"name":"akos","userId":"649496075cb6d83f666e9f3a","role":"user"}}
       const body = await response.json()
       // return just the user object to the caller of `handleLogin` (which is being called in `Login.js` component)
-      return body.user
+
+      return { successful: true, user: body.user }
     } else {
       console.log('Login failed')
-      return false
+      return { successful: false }
     }
   } catch (error) {
     console.log(error)
