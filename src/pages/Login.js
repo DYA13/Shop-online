@@ -16,6 +16,7 @@ const Login = ({ afterLogin }) => {
     if (responseSucceeded) {
       setEmail('')
       setPassword('')
+      // This will call the setUserNameAfterLogin function in the HeaderContnent component to display the Welcome message in the header
       afterLogin(loggedInUser)
       setRedirectToHome(true)
     }
