@@ -2,8 +2,7 @@ import './App.css'
 import Oggetti from './Components/OggettiComponents/Oggetti'
 import AllCategories from './Components/Filter/AllCategories'
 import Cart from './Components/Cart/Cart'
-import Header from './Components/Header/HeaderContent'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Header from './Components/HeaderContent'
 
 function App() {
   return (

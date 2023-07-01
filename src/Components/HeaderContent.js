@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
-import Login from '../../pages/Login'
-import Register from '../../pages/Register'
-import Logout from '../../pages/Logout'
+import Login from '../pages/Login'
+import Register from '../pages/Register'
+import Logout from '../pages/Logout'
 
 const Header = () => {
   let text = useRef(null)
