@@ -52,11 +52,12 @@ const Register = () => {
 
   return (
     <div>
-      <h1>Registration Form</h1>
+      <h4>Registration Form</h4>
       <form onSubmit={handleSubmit}>
         <div>
           <label className='label'>Name</label>
           <input
+            className='input-register'
             type='name'
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -65,6 +66,7 @@ const Register = () => {
         <div>
           <label className='label'>Email</label>
           <input
+            className='input-register'
             type='email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -73,15 +75,21 @@ const Register = () => {
         <div>
           <label className='label'>Password</label>
           <input
+            className='input-register'
             type='password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type='submit'>Register</button>
+        <button className='button-register' type='submit'>
+          Register
+        </button>
       </form>
-      <p className='accountPar'>
-        Already have an account? <Link to='/login'>Login</Link>
+      <p className='account-par'>
+        Already have an account?{' '}
+        <Link className='link' to='/login'>
+          Login
+        </Link>
       </p>
     </div>
   )

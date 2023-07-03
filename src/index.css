@@ -107,8 +107,74 @@ code {
 .label {
   font: 15px;
   color: goldenrod;
+  margin: 10px;
+  padding: 10px;
 }
 .account-par {
   font-size: 18px;
   color: goldenrod;
+}
+.loginLink {
+  font-size: 15px;
+  color: aqua;
+}
+.logoutPar,
+.logoutButton {
+  font-size: 15px;
+  color: goldenrod;
+}
+.welcome-message {
+  font-size: 15px;
+  color: #d9dc14;
+}
+.notification {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: aliceblue;
+}
+
+.success {
+  background-color: #d9dc14;
+  color: #b1cab2;
+}
+
+h4 {
+  color: #fcfaf1;
+  font-size: 20px;
+  font-family: 'Droid Sans';
+  text-align: center;
+}
+
+.button-login,
+.button-register {
+  width: 40%;
+  padding: 6px;
+  margin: 15px;
+  border-radius: 5px;
+  border: none;
+  background: #ebeadd;
+  font-size: 14px;
+  font-weight: 600;
+  color: #171313;
+}
+button:hover {
+  opacity: 0.8;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.input-login,
+.input-register {
+  width: 50%;
+  height: 20px;
+  margin: 5px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background: #fff;
+}
+.link {
+  color: #fcfaf1;
 }

@@ -6,18 +6,22 @@ const Login = ({ afterLogin }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [redirectToHome, setRedirectToHome] = useState(false)
+  const [loginSuccess, setLoginSuccess] = useState(false)
+  const [loggedInEmail, setLoggedInEmail] = useState('')
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     if (!email || !password) return
     const user = { email, password }
     const { successful: responseSucceeded, user: loggedInUser } =
-      await handleLogin(user) // Update handleLogin in api.js to return the user in an object;  instead of just returning true
+      await handleLogin(user)
     if (responseSucceeded) {
       setEmail('')
       setPassword('')
       // This will call the setUserNameAfterLogin function in the HeaderContnent component to display the Welcome message in the header
       afterLogin(loggedInUser)
+      setLoggedInEmail(email)
+      setLoginSuccess(true)
       setRedirectToHome(true)
     }
   }
@@ -27,12 +31,17 @@ const Login = ({ afterLogin }) => {
   }
 
   return (
-    <div>
-      <h1>Login Form</h1>
+    <div className='login-form'>
+      <h4>Log in</h4>
+
+      {loginSuccess && (
+        <p className='welcome-message'>Welcome, {loggedInEmail}!</p>
+      )}
       <form onSubmit={handleSubmit}>
         <div>
           <label className='label'>Email</label>
           <input
+            className='input-login'
             type='email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -41,15 +50,21 @@ const Login = ({ afterLogin }) => {
         <div>
           <label className='label'>Password</label>
           <input
+            className='input-login'
             type='password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type='submit'>Login</button>
+        <button className='button-login' type='submit'>
+          Login
+        </button>
       </form>
       <p className='account-par'>
-        Don't have an account? <Link to='/register'>Register</Link>
+        Don't have an account?{' '}
+        <Link className='link' to='/register'>
+          Register
+        </Link>
       </p>
     </div>
   )
