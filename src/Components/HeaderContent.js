@@ -20,24 +20,24 @@ const Header = () => {
   }, [])
 
   function setUserNameAfterLogin(user) {
-    console.log('SETTING USER NAME: ', user)
+    console.log('SETTING USER NAME in HeaderContent: ', user)
     setUserName(user.name)
   }
 
   return (
-    <Router>
-      <div className='headerContainer'>
-        <img className='logoImg' src='Logo.png' alt='logo' />
+    <div className='headerContainer'>
+      <img className='logoImg' src='Logo.png' alt='logo' />
 
-        <p
-          ref={(el) => {
-            text = el
-          }}
-          className='par'
-        >
-          Benvenuto su Jewelry Shop Olivia Rossi!
-        </p>
+      <p
+        ref={(el) => {
+          text = el
+        }}
+        className='par'
+      >
+        Benvenuto su Jewelry Shop Olivia Rossi!
+      </p>
 
+      <Router>
         <Routes>
           <Route
             exact
@@ -52,10 +52,13 @@ const Header = () => {
               userName ? <p className='accountPar'>Welcome {userName}!</p> : ''
             }
           ></Route>
-          <Route path='login' element={<Login />} />
         </Routes>
-      </div>
-    </Router>
+      </Router>
+
+      <a href='##' className='carello-button'>
+        <img className='carelloImg' src='Carello.png' alt='logo' />
+      </a>
+    </div>
   )
 }
 
