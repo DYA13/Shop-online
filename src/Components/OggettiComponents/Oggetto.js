@@ -1,4 +1,4 @@
-import ChangeQuantity from "../Cart/ChangeQuantity";
+import ChangeQuantity from "./ChangeQuantity";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addItemToCart } from "../../redux/cartSlice";
